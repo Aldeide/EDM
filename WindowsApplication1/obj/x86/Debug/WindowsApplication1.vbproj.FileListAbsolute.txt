@@ -1,0 +1,25 @@
+C:\Users\Anthony\AppData\Local\Temporary Projects\WindowsApplication1\bin\Debug\WindowsApplication1.exe
+C:\Users\Anthony\AppData\Local\Temporary Projects\WindowsApplication1\bin\Debug\WindowsApplication1.pdb
+C:\Users\Anthony\AppData\Local\Temporary Projects\WindowsApplication1\bin\Debug\WindowsApplication1.xml
+C:\Users\Anthony\AppData\Local\Temporary Projects\WindowsApplication1\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Users\Anthony\AppData\Local\Temporary Projects\WindowsApplication1\obj\x86\Debug\WindowsApplication1.Form1.resources
+C:\Users\Anthony\AppData\Local\Temporary Projects\WindowsApplication1\obj\x86\Debug\WindowsApplication1.Resources.resources
+C:\Users\Anthony\AppData\Local\Temporary Projects\WindowsApplication1\obj\x86\Debug\GenerateResource.read.1.tlog
+C:\Users\Anthony\AppData\Local\Temporary Projects\WindowsApplication1\obj\x86\Debug\GenerateResource.write.1.tlog
+C:\Users\Anthony\AppData\Local\Temporary Projects\WindowsApplication1\obj\x86\Debug\WindowsApplication1.exe
+C:\Users\Anthony\AppData\Local\Temporary Projects\WindowsApplication1\obj\x86\Debug\WindowsApplication1.xml
+C:\Users\Anthony\AppData\Local\Temporary Projects\WindowsApplication1\obj\x86\Debug\WindowsApplication1.pdb
+C:\Users\Anthony\documents\visual studio 2010\Projects\WindowsApplication1\WindowsApplication1\obj\x86\Debug\WindowsApplication1.exe
+C:\Users\Anthony\documents\visual studio 2010\Projects\WindowsApplication1\WindowsApplication1\obj\x86\Debug\WindowsApplication1.xml
+C:\Users\Anthony\documents\visual studio 2010\Projects\WindowsApplication1\WindowsApplication1\obj\x86\Debug\WindowsApplication1.pdb
+C:\Users\Anthony\Documents\Visual Studio 2010\Projects\WindowsApplication1\WindowsApplication1\bin\Debug\WindowsApplication1.exe
+C:\Users\Anthony\Documents\Visual Studio 2010\Projects\WindowsApplication1\WindowsApplication1\bin\Debug\WindowsApplication1.pdb
+C:\Users\Anthony\Documents\Visual Studio 2010\Projects\WindowsApplication1\WindowsApplication1\bin\Debug\WindowsApplication1.xml
+C:\Users\Anthony\Documents\Visual Studio 2010\Projects\WindowsApplication1\WindowsApplication1\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Users\Anthony\Documents\Visual Studio 2010\Projects\WindowsApplication1\WindowsApplication1\obj\x86\Debug\WindowsApplication1.Form1.resources
+C:\Users\Anthony\Documents\Visual Studio 2010\Projects\WindowsApplication1\WindowsApplication1\obj\x86\Debug\WindowsApplication1.Resources.resources
+C:\Users\Anthony\Documents\Visual Studio 2010\Projects\WindowsApplication1\WindowsApplication1\obj\x86\Debug\GenerateResource.read.1.tlog
+C:\Users\Anthony\Documents\Visual Studio 2010\Projects\WindowsApplication1\WindowsApplication1\obj\x86\Debug\GenerateResource.write.1.tlog
+C:\Users\Anthony\Documents\Visual Studio 2010\Projects\WindowsApplication1\WindowsApplication1\obj\x86\Debug\WindowsApplication1.Form2.resources
+C:\Users\Anthony\Documents\Visual Studio 2010\Projects\WindowsApplication1\WindowsApplication1\bin\Debug\DotNumerics.pdb
+C:\Users\Anthony\Documents\Visual Studio 2010\Projects\WindowsApplication1\WindowsApplication1\bin\Debug\DotNumerics.xml
