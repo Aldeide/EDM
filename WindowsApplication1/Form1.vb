@@ -4,20 +4,20 @@
     Dim Anode As Nurbs
     Dim Cathode As Nurbs
     Dim Circle As Nurbs
-    Private Sub Button1_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button1.Click
+    Private Sub Button1_Click(ByVal sender As System.Object, ByVal e As System.EventArgs)
 
-        Anode = New Nurbs(nd, kv)
+        ' Anode = New Nurbs(nd, kv)
         'Anode.Refine(0.01, 0.99, 500)
-        Anode.DrawCurve()
-        Anode.DrawHull()
-        Anode.DrawCP()
-        Label1.Text = Anode.PNumKnots
-        Label2.Text = Anode.PNumCP
+        ' Anode.DrawCurve()
+        ' Anode.DrawHull()
+        ' Anode.DrawCP()
+        '  Label1.Text = Anode.PNumKnots
+        '  Label2.Text = Anode.PNumCP
 
-        Cathode = New Nurbs(nd2, kv2)
-        Cathode.PNurbsDistance = Anode
-        Cathode.Refine(0.01, 0.98999999999999999, 2000)
-        Cathode.DrawCurve()
+        '  Cathode = New Nurbs(nd2, kv2)
+        ' Cathode.PNurbsDistance = Anode
+        ' Cathode.Refine(0.01, 0.98999999999999999, 2000)
+        '  Cathode.DrawCurve()
 
 
     End Sub
@@ -72,30 +72,76 @@
         nd2(0, 1) = 790
         nd2(1, 1) = 450
         nd2(2, 1) = 1
+        Label3.Text = TrackBar4.Value
+        Label6.Text = TrackBar1.Value / 100
+        Label7.Text = TrackBar2.Value / 100
+        Label8.Text = TrackBar3.Value
+        Label10.Text = TrackBar5.Value
     End Sub
 
-    Private Sub Button2_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button2.Click
-        Dim myGraphics As Graphics
-        myGraphics = Graphics.FromHwnd(Me.Handle)
-        myGraphics.Clear(Color.White)
-        Anode.DeltaZ(1)
-        Cathode.Crater(0.10000000000000001, Anode)
-        Anode.DrawCurve()
-        Cathode.DrawCurve()
+    Private Sub Button2_Click(ByVal sender As System.Object, ByVal e As System.EventArgs)
+        '  Dim myGraphics As Graphics
+        '  myGraphics = Graphics.FromHwnd(Me.Handle)
+        '  myGraphics.Clear(Color.White)
+        ' Anode.DeltaZ(1)
+        ' Cathode.Crater(0.10000000000000001, Anode)
+        '  Anode.DrawCurve()
+        ' Cathode.DrawCurve()
         'Cathode.DrawCP()
-        Cathode.DrawMinDistance()
+        ' Cathode.DrawMinDistance()
     End Sub
 
     Private Sub Button3_Click(ByVal sender As System.Object, ByVal e As System.EventArgs)
-        Circle = New Nurbs(nd2, kv2)
-        Circle.DrawCurve()
-        Circle.DrawCP()
-        Circle.DrawHull()
-        Circle.DrawKnots()
+        '  Circle = New Nurbs(nd2, kv2)
+        '  Circle.DrawCurve()
+        '  Circle.DrawCP()
+        '  Circle.DrawHull()
+        ' Circle.DrawKnots()
     End Sub
 
-    Private Sub Button4_Click(ByVal sender As System.Object, ByVal e As System.EventArgs)
-
+    Private Sub Button4_Click_1(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button4.Click
+        Dim myGraphics As Graphics
+        myGraphics = Graphics.FromHwnd(Me.Handle)
+        myGraphics.Clear(Me.BackColor)
+        Cathode = New Nurbs(nd2, kv2)
+        Cathode.Refine(0, 1, TrackBar4.Value)
+        Cathode.DrawCurve()
+        If CheckBox1.Checked Then
+            Cathode.DrawCP()
+        End If
+        'Cathode.DrawKnots()
     End Sub
+
+    Private Sub Button3_Click_1(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button3.Click
+        Dim myGraphics As Graphics
+        For i = 1 To TrackBar5.Value
+            Cathode.Crater2(CType(TrackBar1.Value / 100, Double), CType(TrackBar2.Value / 100, Double), TrackBar3.Value)
+        Next
+
+        myGraphics = Graphics.FromHwnd(Me.Handle)
+        myGraphics.Clear(Me.BackColor)
+        If CheckBox1.Checked Then
+            Cathode.DrawCP()
+        End If
+        Cathode.DrawCurve()
+        'Cathode.DrawKnots()
+    End Sub
+
+    Private Sub Trackbar4_Scroll() Handles TrackBar4.Scroll
+        Label3.Text = TrackBar4.Value
+    End Sub
+    Private Sub Trackbar1_Scroll() Handles TrackBar1.Scroll
+        Label6.Text = TrackBar1.Value / 100
+    End Sub
+    Private Sub Trackbar2_Scroll() Handles TrackBar2.Scroll
+        Label7.Text = TrackBar2.Value / 100
+    End Sub
+    Private Sub Trackbar3_Scroll() Handles TrackBar3.Scroll
+        Label8.Text = TrackBar3.Value
+    End Sub
+    Private Sub Trackbar5_Scroll() Handles TrackBar5.Scroll
+        Label10.Text = TrackBar5.Value
+    End Sub
+
 
 End Class
